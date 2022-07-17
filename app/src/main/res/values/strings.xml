@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DramaList</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastro">Cadastre-se</string>
+    <string name="title_cadastro">Faça seu cadastro</string>
+    <string name="title_principal">Meus Doramas</string>
+</resources>
