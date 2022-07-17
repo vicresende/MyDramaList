@@ -168,6 +168,15 @@
         android:clickable="true"
         />
 
+    <ImageView
+        android:id="@+id/danna"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/anna"
+        app:layout_constraintBottom_toBottomOf="@id/dor4"
+        app:layout_constraintLeft_toLeftOf="@id/dor4"
+        app:layout_constraintTop_toTopOf="@id/dor4" />
+
     <View
         android:id="@+id/dor5"
         style="@style/Dorama"
@@ -188,6 +197,15 @@
         android:clickable="true"
         />
 
+    <ImageView
+        android:id="@+id/dcm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cm"
+        app:layout_constraintBottom_toBottomOf="@id/dor5"
+        app:layout_constraintLeft_toLeftOf="@id/dor5"
+        app:layout_constraintTop_toTopOf="@id/dor5" />
+
     <View
         android:id="@+id/dor6"
         style="@style/Dorama"
@@ -207,6 +225,15 @@
         app:layout_constraintRight_toRightOf="@id/dor6"
         android:clickable="true"
         />
+
+    <ImageView
+        android:id="@+id/deve"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/eve"
+        app:layout_constraintBottom_toBottomOf="@id/dor6"
+        app:layout_constraintLeft_toLeftOf="@id/dor6"
+        app:layout_constraintTop_toTopOf="@id/dor6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
