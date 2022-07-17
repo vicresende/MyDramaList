@@ -12,5 +12,6 @@ public class TelaPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_tela_principal);
 
         getSupportActionBar().hide();
+
     }
 }

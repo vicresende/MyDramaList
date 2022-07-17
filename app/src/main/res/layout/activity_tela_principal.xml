@@ -9,62 +9,53 @@
 
     <View
         android:id="@+id/containerUser"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
         android:background="@drawable/container_user"
         android:backgroundTint="#C9FFFFFF"
-        android:clickable="false"
         android:elevation="1dp"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@id/viewp"
         app:layout_constraintRight_toRightOf="@id/viewp"
-        app:layout_constraintTop_toTopOf="@id/viewp"
-        tools:visibility="visible"
-        />
+        app:layout_constraintTop_toTopOf="@id/viewp" />
 
 
     <ImageView
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="80dp"
-        android:elevation="2dp"
+        android:elevation="1dp"
         android:src="@drawable/ic_user"
         app:layout_constraintBottom_toBottomOf="@+id/containerUser"
         app:layout_constraintEnd_toEndOf="@+id/containerUser"
         app:layout_constraintStart_toStartOf="@+id/containerUser"
-        app:layout_constraintTop_toTopOf="@+id/containerUser"
-        />
+        app:layout_constraintTop_toTopOf="@+id/containerUser" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewp"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:background="#C8000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-    />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/text_telaprincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="2dp"
-        android:text="@string/title_principal"
-        android:textSize="40sp"
-        android:textColor="#F4F0F0"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/viewp"
-        app:layout_constraintStart_toStartOf="@id/viewp"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="25dp"
-        />
-
-
-
+        android:layout_marginTop="25dp"
+        android:elevation="1dp"
+        android:text="@string/title_principal"
+        android:textColor="#F4F0F0"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/viewp"
+        app:layout_constraintTop_toTopOf="@id/viewp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
