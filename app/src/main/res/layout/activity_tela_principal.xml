@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".TelaPrincipal">
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="525dp"
+        android:layout_height="104dp"
+        android:background="#CD000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 
     <View
         android:id="@+id/containerUser"
@@ -16,10 +33,9 @@
         android:background="@drawable/container_user"
         android:backgroundTint="#C9FFFFFF"
         android:elevation="1dp"
-        app:layout_constraintEnd_toEndOf="@id/viewp"
-        app:layout_constraintRight_toRightOf="@id/viewp"
-        app:layout_constraintTop_toTopOf="@id/viewp" />
-
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintRight_toRightOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra" />
 
     <ImageView
         android:layout_width="70dp"
@@ -30,18 +46,6 @@
         app:layout_constraintEnd_toEndOf="@+id/containerUser"
         app:layout_constraintStart_toStartOf="@+id/containerUser"
         app:layout_constraintTop_toTopOf="@+id/containerUser" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewp"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="#C8000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/text_telaprincipal"
@@ -54,8 +58,156 @@
         android:textColor="#F4F0F0"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/viewp"
-        app:layout_constraintTop_toTopOf="@id/viewp" />
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra" />
+
+    <View
+        android:id="@+id/dor1"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barra"
+        />
+
+    <ImageView
+        android:id="@+id/check1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor1"
+        app:layout_constraintTop_toTopOf="@id/dor1"
+        app:layout_constraintRight_toRightOf="@id/dor1"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/daos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/aos"
+        app:layout_constraintBottom_toBottomOf="@id/dor1"
+        app:layout_constraintLeft_toLeftOf="@id/dor1"
+        app:layout_constraintTop_toTopOf="@id/dor1" />
+
+    <View
+        android:id="@+id/dor2"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dor1"
+        />
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor2"
+        app:layout_constraintTop_toTopOf="@id/dor2"
+        app:layout_constraintRight_toRightOf="@id/dor2"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/dnaeil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/naeil"
+        app:layout_constraintBottom_toBottomOf="@id/dor2"
+        app:layout_constraintLeft_toLeftOf="@id/dor2"
+        app:layout_constraintTop_toTopOf="@id/dor2" />
+
+    <View
+        android:id="@+id/dor3"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dor2"
+        />
+
+    <ImageView
+        android:id="@+id/check3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor3"
+        app:layout_constraintTop_toTopOf="@id/dor3"
+        app:layout_constraintRight_toRightOf="@id/dor3"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/dtfto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tfto"
+        app:layout_constraintBottom_toBottomOf="@id/dor3"
+        app:layout_constraintLeft_toLeftOf="@id/dor3"
+        app:layout_constraintTop_toTopOf="@id/dor3" />
+
+    <View
+        android:id="@+id/dor4"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dor3"
+        />
+
+    <ImageView
+        android:id="@+id/check4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor4"
+        app:layout_constraintTop_toTopOf="@id/dor4"
+        app:layout_constraintRight_toRightOf="@id/dor4"
+        android:clickable="true"
+        />
+
+    <View
+        android:id="@+id/dor5"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dor4"
+        />
+
+    <ImageView
+        android:id="@+id/check5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor5"
+        app:layout_constraintTop_toTopOf="@id/dor5"
+        app:layout_constraintRight_toRightOf="@id/dor5"
+        android:clickable="true"
+        />
+
+    <View
+        android:id="@+id/dor6"
+        style="@style/Dorama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dor5"
+        />
+
+    <ImageView
+        android:id="@+id/check6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/dor6"
+        app:layout_constraintTop_toTopOf="@id/dor6"
+        app:layout_constraintRight_toRightOf="@id/dor6"
+        android:clickable="true"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

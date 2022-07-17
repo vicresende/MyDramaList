@@ -32,4 +32,14 @@
         <item name="android:background">@drawable/button</item>
     </style>
 
+    <style name="Dorama">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">@drawable/list</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
 </resources>
