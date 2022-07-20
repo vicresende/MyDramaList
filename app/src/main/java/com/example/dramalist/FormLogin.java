@@ -16,7 +16,6 @@ public class FormLogin extends AppCompatActivity {
     private TextView text_tela_cadastro;
     private EditText email, senha;
     private AppCompatButton bt_entrar;
-    //private fazer a autenticacao com if simples tal qual foto no wpp
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +41,7 @@ public class FormLogin extends AppCompatActivity {
 
                 if(varEmail.equals("victoria.resende@ibm.com") && varSenha.equals("1010")){
                     Intent intent = new Intent(FormLogin.this, TelaPrincipal.class);
+                    intent.putExtra("chave_email", varEmail);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(),
